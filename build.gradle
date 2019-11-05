@@ -20,7 +20,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-stater-logging'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.springframework.boot:spring-boot-starter-logging'
+    runtimeOnly 'com.h2database:h2'
+    compile 'org.javassist:javassist:3.26.0-GA'
+    compile 'org.modelmapper:modelmapper:2.3.5'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
